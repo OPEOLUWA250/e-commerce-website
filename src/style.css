@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212529;
+    color: #fff;
+    padding: 1.2rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.cart {
+    background-color: #fff;
+    color: #000;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -0.8rem;
+    right: -0.4rem;
+    font-size: 1rem;
+    background-color: red;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 100%;
+}
+
+/* Shop item styles */
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        display: grid;
+    }
+}
+
+.item {
+    border: 2px solid #212529;
+    width: 223px;
+    border-radius: 4px;
+}
+
+.item img {
+   width: 100%;
+   border-radius: 2px 2px 0 0;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 8px;
+}
+
+ .price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.bi-dash-lg {
+    color: red;
+}
+
+.bi-plus-lg {
+    color: green;
+}
+
+/* styles rules for label and some buttons */
+
+.text-center {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.HomeBtn, .checkout, .removeAll {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+
+/*  shopping cart */
+
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 320px;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* cart items */
+
+.cart-item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    display: flex;
+}
+
+.title-price-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 195px;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-item-price {
+    background-color: #212529;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+
+
+ 
